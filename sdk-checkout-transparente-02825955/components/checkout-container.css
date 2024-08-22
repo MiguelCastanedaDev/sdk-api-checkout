@@ -1,0 +1,68 @@
+
+
+.form-payment{
+    width: 100%;
+    animation: fadeInUp 1s ease-in-out forwards;
+
+    & span{
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--gray);
+    }
+
+    & h1{
+        font-size: clamp(1rem, 2vw + 1rem, 3rem);
+    }
+    
+}
+
+#submit{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;    padding: var(--pd);
+    border-radius: var(--radius);
+    color: var(--black);
+    font-weight: 600;
+    font-size: clamp(0.5rem, 1vw + 0.5rem, 1rem);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    justify-content: center;
+
+    & figure{
+        margin: 0;
+        width: 32px;
+        height: 32px;
+
+        & img{
+            width: 100%;
+        }
+    }
+}
+
+#submit:hover{
+    border: 2px solid var(--orange);
+}
+
+.cash-container{
+    width: 100%;
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out forwards;
+
+    
+    & iframe{
+        width: 70%;
+        min-height: 590px;
+    }
+}
+
+#__next{
+    .Layout_wrapLayoutMain__zTCYF{
+        margin: 0;
+        max-width: 100%;
+
+        & .Footer_wrapFooter__dQxHO {
+            max-width: 100%;
+        }
+    }
+}
+

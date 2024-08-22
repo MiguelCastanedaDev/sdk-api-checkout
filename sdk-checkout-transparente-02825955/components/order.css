@@ -1,0 +1,97 @@
+.receipt-section{
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+
+    & .receipt-amount{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & .spn-total{
+            font-size: 16px;
+            color: var(--black);
+            font-weight: 600;
+        }
+
+        & h2{
+            font-size: 24px;
+            color: var(--orange);
+        }
+
+        & .spn-payment{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            font-size: 12px;
+        }
+    }
+
+    & hr{
+        width: 100%;
+        height: 1px;
+        border: none;
+        background-color: var(--gray-two);
+    }
+
+    & .order{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+
+
+        & span{
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--gray);
+        }
+
+        & .product{
+            & .spn-product{
+                display: flex;
+                font-size: 16px;
+                font-weight: 600;
+                color: var(--black);
+                gap: 4px;
+
+                & figure{
+                    margin: 0;
+                    width: 100px;
+                    height: 100px;
+                    & img{
+                        max-width: 100%;
+                        object-fit: contain;
+                        border-radius: 2px;
+                    }
+                }
+            }
+
+            & div{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        & .subtotal{
+            display: flex;
+            flex-direction: column;
+
+            & div{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        & .total{
+            display: flex;
+            justify-content: space-between;
+            & .spn-total{
+                font-size: 16px;
+                color: var(--black);
+            }
+        }
+    }
+}

@@ -1,0 +1,79 @@
+:root{
+    --orange: #fc4c02;
+    --orange-two: rgb(252, 241, 237);
+    --gray: #545c63;
+    --gray-two: #a7a7a7;
+    --white: #fff;
+    --black: #323232;
+    --pd: .75rem 1rem;
+    --radius: .5rem; 
+}
+
+*{
+    font-family: 'Nunito Sans';
+}
+
+body{
+    margin: 0 5%;
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    gap: 16px;
+    height: 100vh;
+    width: 1512px;
+    padding: 0 4%;
+
+    & .checkout-section{
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        animation: opacity 1s ease-in-out forwards;  
+    }
+
+    & .receipt-section{
+        animation: opacity 1s ease-in-out forwards;  
+
+        width: 45%;
+        background-color: var(--orange-two);
+        margin: 1%;
+        border-radius: var(--radius);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Mueve el texto hacia abajo */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Regresa a su posición original */
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 920px) {
+
+    main{
+        flex-wrap: wrap;
+        & .checkout-section, .receipt-section{
+            width: 100%;
+        }
+
+        & .receipt-section{
+            margin-bottom: 5%;
+        }
+    }
+}
